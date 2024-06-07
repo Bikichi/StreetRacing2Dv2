@@ -25,7 +25,7 @@ public class Car : MonoBehaviour
         carTransform.position -= new Vector3(0, speed * Time.deltaTime, 0);
         //Để -= vì nó di chuyển đi xuống, theo hệ trục tọa độ trục y thì hướng xuống dưới là chiều âm
         //Không thể code di chuyển kiểu Background vì Position đã set 90 để quay dọc
-        if (carTransform.position.y <= -6 || Player.Ins.isDead)
+        if (carTransform.position.y <= -8 || Player.Ins.isDead)
         {
             Destroy(gameObject); // vì đến vị trí này đối tượng bị hủy nên scripts cũng bị hủy nên để lưu biến đếm tổng số xe đã vượt qua thì phải tạo biến này ở 1 class khác
         }
@@ -46,23 +46,23 @@ public class Car : MonoBehaviour
     {
         if (ScoreManager.Ins.score >= 0 && ScoreManager.Ins.score < 30)
         {
-            speed = 6.0f;
+            speed = 5.0f;
         }
         else if (ScoreManager.Ins.score >= 30 && ScoreManager.Ins.score < 60)
         {
-            speed = 7.0f;
+            speed = 6.0f;
         }
         else if (ScoreManager.Ins.score >= 60 && ScoreManager.Ins.score < 100)
         {
-            speed = 8.5f;
+            speed = 7.0f;
         }
         else if (ScoreManager.Ins.score >= 100 && ScoreManager.Ins.score < 150)
         {
-            speed = 10.0f;
+            speed = 7.5f;
         }
         else
         {
-            speed = 10.5f;
+            speed = 8.0f;
         }
     } 
 }

@@ -95,13 +95,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveUp()
     {
-        roadScolling.speed = 13.5f;
+        roadScolling.speed = 12f;
         PMtransform.position += new Vector3(0, speed * Time.deltaTime, 0);
     }
 
     public void MoveDown()
     {
-        roadScolling.speed = 7.5f;
+        roadScolling.speed = 9.0f;
         PMtransform.position -= new Vector3(0, speed * Time.deltaTime, 0);
 
     }
@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isMoveRight = true;
         PMtransform.position += new Vector3(speed * Time.deltaTime, 0, 0);// += vì đi sang phải theo trục x
-        PMtransform.rotation = Quaternion.Lerp(PMtransform.rotation, Quaternion.Euler(0, 0, -25), rotationSpeed * Time.deltaTime);
+        PMtransform.rotation = Quaternion.Lerp(PMtransform.rotation, Quaternion.Euler(0, 0, -18), rotationSpeed * Time.deltaTime);
         //Quaternion.Euler() trong Unity được sử dụng để tạo ra một đối tượng Quaternion từ các giá trị Euler.
         //Euler là cách biểu diễn góc quay trong không gian ba chiều bằng cách sử dụng ba giá trị số thực, mỗi giá trị đại diện cho góc quay quanh một trong ba trục(x, y, z).
         //Quaternion.Lerp() quay đối tượng từ hướng này, sang hướng khác, với tốc độ nhất định.
@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isMoveLeft = true;
         PMtransform.position -= new Vector3(speed * Time.deltaTime, 0, 0);// -= vì đi sang trái theo trục x
-        PMtransform.rotation = Quaternion.Lerp(PMtransform.rotation, Quaternion.Euler(0, 0, 25), rotationSpeed * Time.deltaTime);
+        PMtransform.rotation = Quaternion.Lerp(PMtransform.rotation, Quaternion.Euler(0, 0, 18), rotationSpeed * Time.deltaTime);
     }
 
     void CheckMoveUpDown()
@@ -180,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
                 limitY,
                 PMtransform.position.z
                 );
-            roadScolling.speed = 12f;
+            roadScolling.speed = 10f;
         }
 
         else if (PMtransform.position.y <= -limitY)
@@ -190,7 +190,7 @@ public class PlayerMovement : MonoBehaviour
                 -limitY,
                 PMtransform.position.z
                 );
-            roadScolling.speed = 12f;
+            roadScolling.speed = 10f;
         }
     }
     void UpSpeedPlayerAccordingToScore() //tăng tốc độ theo điểm số
@@ -202,23 +202,23 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (ScoreManager.Ins.score >= 30 && ScoreManager.Ins.score < 60)
         {
-            speed = 5.5f;
-            rotationSpeed = 5.5f;
+            speed = 5.4f;
+            rotationSpeed = 5.4f;
         }
         else if (ScoreManager.Ins.score >= 60 && ScoreManager.Ins.score < 100)
         {
-            speed = 6.0f;
-            rotationSpeed = 6.0f;
+            speed = 5.8f;
+            rotationSpeed = 5.8f;
         }
         else if (ScoreManager.Ins.score >= 100 && ScoreManager.Ins.score < 150)
         {
-            speed = 7.0f;
-            rotationSpeed = 7.0f;
+            speed = 6.2f;
+            rotationSpeed = 6.2f;
         }
         else
         {
-            speed = 7.5f;
-            rotationSpeed = 7.5f;
+            speed = 6.5f;
+            rotationSpeed = 6.5f;
         }
     }
 }

@@ -53,23 +53,23 @@ public class SpawningCarsManager : MonoBehaviour
     {
         if (ScoreManager.Ins.score >= 0 && ScoreManager.Ins.score < 30)
         {
-            delayTime = 1.0f;
+            delayTime = 1.2f;
         }
         else if (ScoreManager.Ins.score >= 30 && ScoreManager.Ins.score < 60)
         {
-            delayTime = 0.8f;
+            delayTime = 1.0f;
         }
         else if (ScoreManager.Ins.score >= 60 && ScoreManager.Ins.score < 100)
         {
-            delayTime = 0.6f;
+            delayTime = 0.8f;
         }
         else if (ScoreManager.Ins.score >= 100 && ScoreManager.Ins.score < 150)
         {
-            delayTime = 0.5f;
+            delayTime = 0.65f;
         }
         else
         {
-            delayTime = 0.45f;
+            delayTime = 0.6f;
         }
     }
 }

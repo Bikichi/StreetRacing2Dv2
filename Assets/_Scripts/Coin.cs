@@ -19,7 +19,7 @@ public class Coin : MonoBehaviour
             coinSpeed * Time.deltaTime,
             0f
             );
-        if (coinTransform.position.y <= -6 || Player.Ins.isDead)
+        if (coinTransform.position.y <= -8 || Player.Ins.isDead)
         {
             Destroy(gameObject);
         }
