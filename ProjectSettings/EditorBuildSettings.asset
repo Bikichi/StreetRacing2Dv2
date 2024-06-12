@@ -14,4 +14,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/IAP Menu.unity
     guid: 4f6980ef5dffb0a4eaab9963cd738d3c
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 0d173900d9df18b43a6cb867f6dae050, type: 2}
