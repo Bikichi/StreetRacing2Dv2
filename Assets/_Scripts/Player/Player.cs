@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
         if (col.CompareTag(Const.COIN_TAG))
         {
             Destroy(col.gameObject);
-            ScoreManager.Ins.score += 10;
+            ScoreManager.Ins.score += 5;
             CoinManager.Ins.totalCoinValue += 1;
             AudioController.Ins.PlaySound(AudioController.Ins.collect);
         }
