@@ -14,11 +14,16 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
+        MovingCoins();
+    }
+
+    void MovingCoins()
+    {
         coinTransform.position -= new Vector3(
-            0f,
-            coinSpeed * Time.deltaTime,
-            0f
-            );
+        0f,
+        coinSpeed * Time.deltaTime,
+        0f
+        );
         if (coinTransform.position.y <= -8 || Player.Ins.isDead)
         {
             Destroy(gameObject);

@@ -29,10 +29,16 @@ public class SpawningCoins : MonoBehaviour
             {
                 elapsedTime = 0f;
                 // Gọi hàm để tạo đồng xu
-                Invoke("SpawnCoins", Random.Range(minSpawnCoinsTime, maxSpawnCoinsTime)); // thời gian này mới là giây trong thời gian
+                Invoke(nameof(this.SpawnCoins), GetSpawnCoinsTime()); // thời gian này mới là giây trong thời gian
                 //thực thị phương thức với 1 khoảng thời gian delay nhất định
             }
         }
+    }
+
+    public float GetSpawnCoinsTime()
+    {
+        float spawnCoinsTime = Random.Range(minSpawnCoinsTime, maxSpawnCoinsTime);
+        return spawnCoinsTime;
     }
 
     void SpawnCoins()

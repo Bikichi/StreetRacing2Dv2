@@ -27,7 +27,8 @@ public class SpawningCarsManager : MonoBehaviour
                                           //và sẽ đè lên nhau
             {
                 elapsedTime = 0f;
-                Invoke("SpawningCars", GetSpawnCarsTime());
+                //Invoke("SpawningCars", GetSpawnCarsTime());
+                Invoke(nameof(this.SpawningCars), GetSpawnCarsTime());
             }
         }
     }

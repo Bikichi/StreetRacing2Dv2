@@ -22,6 +22,11 @@ public class Car : MonoBehaviour
     void Update()
     {
         UpSpeedCarsAccordingToScore();
+        MovingCars();
+    }
+
+    void MovingCars()
+    {
         carTransform.position -= new Vector3(0, speed * Time.deltaTime, 0);
         //Để -= vì nó di chuyển đi xuống, theo hệ trục tọa độ trục y thì hướng xuống dưới là chiều âm
         //Không thể code di chuyển kiểu Background vì Position đã set 90 để quay dọc
@@ -34,7 +39,7 @@ public class Car : MonoBehaviour
         {
             return;
         }
-      
+
         if (!hasPassed && carTransform.position.y <= playerMovement.PMtransform.position.y) // Nếu chưa tăng giá trị và vị trí của đối tượng xuống dưới đối tượng Player
         {
             ScoreManager.Ins.score += 1;
