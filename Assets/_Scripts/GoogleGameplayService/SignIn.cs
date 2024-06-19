@@ -5,9 +5,19 @@ using GooglePlayGames.BasicApi;
 public class SignIn : MonoBehaviour
 {
     public bool isConnectedToGooglePlayServices;
+    public static SignIn Ins;
 
     private void Awake()
     {
+        if (Ins != null && Ins != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Ins = this;
+            DontDestroyOnLoad(gameObject);
+        }
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
     }

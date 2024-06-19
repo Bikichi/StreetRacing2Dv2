@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class IAPManager : MonoBehaviour
 {
-    [SerializeField] private string coin100_ID = "com.phong.streetracing2d.coin100";
-    [SerializeField] private string coin999_ID = "com.phong.streetracing2d.coin999";
-    [SerializeField] private string removeAdsID = "com.phong.streetracing2d.noads";
+    [SerializeField] private string coin100_ID = "com.phong.streetracing2dv2.100coin";
+    [SerializeField] private string coin999_ID = "com.phong.streetracing2dv2.999coin";
+    [SerializeField] private string removeAdsID = "com.phong.streetracing2dv2.noads";
     public void OnPurchaseComplete(Product product)
     {
         if (product.definition.id == coin100_ID)

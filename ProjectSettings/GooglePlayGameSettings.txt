@@ -1,11 +1,11 @@
 lastUpgrade=01101
 proj.pluginVersion=0.11.01
-proj.AppId=837136541852
-and.BundleId=com.phong.streetraing2d
+proj.AppId=163146521874
+and.BundleId=com.Phong.StreetRacing2Dv2
 proj.classDir=Assets
 proj.ConstantsClassName=GPGSIds
-and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--Google+Play+game+services+IDs.+Save+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--app_id--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e837136541852%3c%2fstring%3e%0d%0a++%3c%21--package_name--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.phong.streetraing2d%3c%2fstring%3e%0d%0a++%3c%21--achievement+Achievement+1--%3e%0d%0a++%3cstring+name%3d%22achievement_achievement_1%22+translatable%3d%22false%22%3eCgkInNHnya4YEAIQAQ%3c%2fstring%3e%0d%0a++%3c%21--leaderboard+Leaderboard--%3e%0d%0a++%3cstring+name%3d%22leaderboard_leaderboard%22+translatable%3d%22false%22%3eCgkInNHnya4YEAIQAg%3c%2fstring%3e%0d%0a%3c%2fresources%3e
-and.ClientId=837136541852-p4lg39sjs5qvcd72at40c9tv40m54421.apps.googleusercontent.com
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--Google+Play+game+services+IDs.+Save+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--app_id--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e163146521874%3c%2fstring%3e%0d%0a++%3c%21--package_name--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.Phong.StreetRacing2Dv2%3c%2fstring%3e%0d%0a++%3c%21--leaderboard+Leaderboard--%3e%0d%0a++%3cstring+name%3d%22leaderboard_leaderboard%22+translatable%3d%22false%22%3eCgkIkrqp4t8EEAIQAQ%3c%2fstring%3e%0d%0a%3c%2fresources%3e
+and.ClientId=163146521874-pm0cf8dctvcum8s4q5gj7dp6d2tb6hpa.apps.googleusercontent.com
 android.SetupDone=true
 App.NearbdServiceId=
 android.NearbySetupDone=true

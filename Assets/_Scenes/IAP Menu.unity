@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0497de245874d8a4c9ffb935b80ff4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin100_ID: com.phong.streetracing2d.coin100
-  coin999_ID: com.phong.streetracing2d.coin999
-  removeAdsID: com.phong.streetracing2d.noads
+  coin100_ID: com.phong.streetracing2dv2.100coin
+  coin999_ID: com.phong.streetracing2dv2.999coin
+  removeAdsID: com.phong.streetracing2dv2.noads
 --- !u!4 &15147567
 Transform:
   m_ObjectHideFlags: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 175945860}
   - component: {fileID: 175945861}
   m_Layer: 5
-  m_Name: BuyButton_2
+  m_Name: +999CoinOptionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b79b5624d944058bd39aad2b90fb275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.phong.streetracing2d.coin999
+  productId: com.phong.streetracing2dv2.999coin
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 570910112}
   - component: {fileID: 570910111}
   m_Layer: 5
-  m_Name: BuyButton_1Text
+  m_Name: +100CoinOptionButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,7 +876,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.99$
+  m_Text: 20K
 --- !u!222 &570910113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1348,7 +1348,7 @@ GameObject:
   - component: {fileID: 1116471075}
   - component: {fileID: 1116471074}
   m_Layer: 5
-  m_Name: BuyButton_3Text
+  m_Name: NoAdsOptionButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1421,7 +1421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1.99$
+  m_Text: 40K
 --- !u!222 &1116471076
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1730,7 +1730,7 @@ GameObject:
   - component: {fileID: 1592214662}
   - component: {fileID: 1592214663}
   m_Layer: 5
-  m_Name: BuyButton_3
+  m_Name: NoAdsOptionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b79b5624d944058bd39aad2b90fb275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.phong.streetracing2d.noads
+  productId: com.phong.streetracing2dv2.noads
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -1904,7 +1904,7 @@ GameObject:
   - component: {fileID: 1908833155}
   - component: {fileID: 1908833156}
   m_Layer: 5
-  m_Name: BuyButton_1
+  m_Name: +100CoinOptionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1980,7 +1980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b79b5624d944058bd39aad2b90fb275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productId: com.phong.streetracing2d.coin100
+  productId: com.phong.streetracing2dv2.100coin
   buttonType: 0
   consumePurchase: 1
   onTransactionsRestored:
@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 1996959584}
   - component: {fileID: 1996959583}
   m_Layer: 5
-  m_Name: BuyButton_2Text
+  m_Name: +999CoinOptionButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2150,7 +2150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 4.99$
+  m_Text: 100K
 --- !u!222 &1996959585
 CanvasRenderer:
   m_ObjectHideFlags: 0

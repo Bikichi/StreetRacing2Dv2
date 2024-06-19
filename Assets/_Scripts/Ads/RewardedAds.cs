@@ -9,7 +9,9 @@ public class RewardedAds : MonoBehaviour ,IUnityAdsLoadListener ,IUnityAdsShowLi
     [SerializeField] private string iosAdUnitId;
     [SerializeField] private GameObject rebornButton;
     [SerializeField] private RebornPlayer rebornPlayer;
-
+    
+    public static RewardedAds Ins;
+    
     [SerializeField] public bool isRemoveAds;
 
     private string adUnitId;
@@ -20,7 +22,8 @@ public class RewardedAds : MonoBehaviour ,IUnityAdsLoadListener ,IUnityAdsShowLi
                         adUnitId = iosAdUnitId;
         #elif UNITY_ANDROID
                 adUnitId = androidAdUnitId;
-        #endif
+#endif
+
         if (PlayerPrefs.GetInt("isRemoveAds", 0) == 0) // = 0 là đã mua mở xóa quảng cáo
         {
             isRemoveAds = false;
