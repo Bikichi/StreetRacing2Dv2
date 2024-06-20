@@ -484,6 +484,8 @@ GameObject:
   m_Component:
   - component: {fileID: 115876636}
   - component: {fileID: 115876637}
+  - component: {fileID: 115876639}
+  - component: {fileID: 115876638}
   m_Layer: 0
   m_Name: GoogleGameplayServiceManager
   m_TagString: Untagged
@@ -519,6 +521,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isConnectedToGooglePlayServices: 1
+--- !u!114 &115876638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115876635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71486a5a9e3760b4f978540984974b81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &115876639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115876635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7028ef448b1f6744fa063f1a94625a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &123612873
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,7 +4193,7 @@ GameObject:
   - component: {fileID: 1414398471}
   - component: {fileID: 1414398470}
   m_Layer: 5
-  m_Name: LeaderbordButton
+  m_Name: LeaderboardButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4235,7 +4261,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1414398471}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115876639}
+        m_TargetAssemblyTypeName: Leaderboards, Assembly-CSharp
+        m_MethodName: ShowLeaderboard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1414398471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5401,7 +5439,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1802934821}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115876638}
+        m_TargetAssemblyTypeName: Achievements, Assembly-CSharp
+        m_MethodName: ShowAchievements
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1802934821
 MonoBehaviour:
   m_ObjectHideFlags: 0

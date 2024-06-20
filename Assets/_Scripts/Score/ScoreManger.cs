@@ -32,7 +32,7 @@ public class ScoreManager : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         UpdateScoreValue();
     }
 
@@ -43,11 +43,16 @@ public class ScoreManager : MonoBehaviour
 
     public void SaveBestScoreValue ()
     {
-        //ép kiểu dữ liệu
         if (score > bestScore)
         {
             bestScore = score;
             PlayerPrefs.SetInt("bestScore", bestScore);
+            if (SignIn.Ins.isConnectedToGooglePlayServices)
+            {
+                Social.ReportScore(bestScore, GPGSIds.leaderboard_streetracing2d, Leaderboards.Ins.LeaderboardUpdate);
+
+                Achievements.Ins.CheckUnlockAchievements(bestScore);
+            }
         }
     }
     void UpdateScoreValue ()

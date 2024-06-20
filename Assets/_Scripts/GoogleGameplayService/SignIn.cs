@@ -21,16 +21,16 @@ public class SignIn : MonoBehaviour
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
     }
-    void Start()
+    public void Start()
     {
         LoginGooglePlay();
     }
-    void LoginGooglePlay()
+    public void LoginGooglePlay()
     {
         Debug.Log("LOGIN!!!");
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
     }
-    void ProcessAuthentication(SignInStatus status)
+    public void ProcessAuthentication(SignInStatus status)
     {
         if (status == SignInStatus.Success)
         {

@@ -24,7 +24,10 @@
 
 public static class GPGSIds
 {
-        public const string leaderboard_leaderboard = "CgkIkrqp4t8EEAIQAQ"; // <GPGSID>
+        public const string achievement_have_best_score_is_300 = "CgkIkrqp4t8EEAIQBQ"; // <GPGSID>
+        public const string achievement_have_best_score_is_100 = "CgkIkrqp4t8EEAIQAw"; // <GPGSID>
+        public const string leaderboard_streetracing2d = "CgkIkrqp4t8EEAIQAQ"; // <GPGSID>
+        public const string achievement_have_best_score_is_200 = "CgkIkrqp4t8EEAIQBA"; // <GPGSID>
 
 }
 
