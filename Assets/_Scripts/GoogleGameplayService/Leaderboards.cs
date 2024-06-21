@@ -24,7 +24,6 @@ public class Leaderboards : MonoBehaviour
 
     public void ShowLeaderboard()
     {
-        if (!SignIn.Ins.isConnectedToGooglePlayServices) SignIn.Ins.LoginGooglePlay();
         Debug.Log("Show Leaderboard UI !!!");
         Social.ShowLeaderboardUI();
     }

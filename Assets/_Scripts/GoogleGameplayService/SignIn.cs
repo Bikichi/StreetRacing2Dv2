@@ -11,7 +11,7 @@ public class SignIn : MonoBehaviour
     {
         if (Ins != null && Ins != this)
         {
-            Destroy(gameObject);
+            Destroy(Ins);
         }
         else
         {

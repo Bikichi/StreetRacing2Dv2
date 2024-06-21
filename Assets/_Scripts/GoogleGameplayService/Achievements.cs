@@ -53,7 +53,6 @@ public class Achievements : MonoBehaviour
 
     public void ShowAchievements()
     {
-        if (!SignIn.Ins.isConnectedToGooglePlayServices) SignIn.Ins.LoginGooglePlay();
         Debug.Log("Show Achievements UI !!!");
         Social.ShowAchievementsUI();
     }
