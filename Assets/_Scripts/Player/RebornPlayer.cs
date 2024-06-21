@@ -24,7 +24,7 @@ public class RebornPlayer : MonoBehaviour
         if (effect) 
         {
             var effectI = Instantiate(effect, player.transform.position, Quaternion.identity);
-            Destroy(effectI, 0.5f);
+            Destroy(effectI, 1.1f);
         }
     }
 }
