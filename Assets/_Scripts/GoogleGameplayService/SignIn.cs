@@ -16,6 +16,7 @@ public class SignIn : MonoBehaviour
         else
         {
             Ins = this;
+            DontDestroyOnLoad(gameObject);
         }
         PlayGamesPlatform.DebugLogEnabled = true;
         PlayGamesPlatform.Activate();
