@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GooglePlayGames;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     public Text lastScoreText;
     public Text bestScoreText;
+    public GoogleGameplayServiceManager googleGameplayServiceManager;
 
     private void Awake()
     {
@@ -47,11 +49,11 @@ public class ScoreManager : MonoBehaviour
         {
             bestScore = score;
             PlayerPrefs.SetInt("bestScore", bestScore);
-            if (SignIn.Ins.isConnectedToGooglePlayServices)
+            if (googleGameplayServiceManager.isConnectedToGooglePlayServices)
             {
-                Social.ReportScore(bestScore, GPGSIds.leaderboard_streetracing2d, Leaderboards.Ins.LeaderboardUpdate);
+                PlayGamesPlatform.Instance.ReportScore(bestScore, GPGSIds.leaderboard_streetracing2d, googleGameplayServiceManager.LeaderboardUpdate);
 
-                Achievements.Ins.CheckUnlockAchievements(bestScore);
+                googleGameplayServiceManager.CheckUnlockAchievements(bestScore);
             }
         }
     }
